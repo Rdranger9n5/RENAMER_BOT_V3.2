@@ -59,8 +59,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/HeavenBotSupport") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/HeavenBotSupport") ]  ]))
 	    return
 	if id:
 	        if id == procode:
@@ -78,7 +78,7 @@ async def send_doc(client,message):
        		await message.reply_text("**__You are not subscribed my channel__** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/HeavenBotSupport") ]   ]))
        		return
        try:
            bot_data = find_one(int(botid))
@@ -101,7 +101,7 @@ async def send_doc(client,message):
        
        if user_type=="Free":
            LIMIT = 600
-           await message.reply_text(f"Complete The Task and get Free subscription per day . Watch full video https://lntechnical.works/{message.from_user.id} ")
+           await message.reply_text(f"Complete The Task and get Free subscription per day .")
            return
        elif user_type=="NORMAL":
            LIMIT = 250
