@@ -15,12 +15,12 @@ CHANNEL = os.environ.get('CHANNEL',"")
 import datetime
 from datetime import date as date_
 STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
-token = os.environ.get('TOKEN','')
+log_channel = int(os.environ.get("LOG_CHANNEL","-1001720888155"))
+token = os.environ.get('TOKEN','6141105459:AAG2QgssXPV2at540w1CextAZJIrSRH8Kq4')
 botid = token.split(':')[0]
 
-DB_NAME = os.environ.get("DB_NAME","")
-DB_URL = os.environ.get("DB_URL","")
+DB_NAME = os.environ.get("DB_NAME","renamesfbot")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://renamesfbot:renamesfbot@renamesfbot.vvjumza.mongodb.net/?retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["promo"]
